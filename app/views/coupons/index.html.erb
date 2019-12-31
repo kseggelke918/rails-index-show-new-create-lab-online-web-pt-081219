@@ -2,5 +2,5 @@
 <!--<p>Find me in app/views/coupons/index.html.erb</p>-->
 
 <% @coupons.each do |coupon| %>
-  <li>link_to coupon.coupon_code, coupon_path(coupon)</li> 
+  <li><%=link_to coupon.coupon_code, coupon_path(coupon)%></li> 
 <% end %>
